@@ -1,78 +1,19 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Хоккейная команда</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-    }
-
-    header {
-      background-color: #1a1a1a;
-      color: white;
-      padding: 1rem;
-      text-align: center;
-    }
-
-    .matches {
-      padding: 1rem;
-      overflow-x: auto;
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      background-color: white;
-    }
-
-    th, td {
-      border: 1px solid #ddd;
-      padding: 0.75rem;
-      text-align: center;
-    }
-
-    th {
-      background-color: #333;
-      color: white;
-    }
-
-    .cards {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-      padding: 1rem;
-      justify-content: center;
-    }
-
-    .card {
-      background-color: white;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-      padding: 1rem;
-      width: 250px;
-      text-align: center;
-    }
-
-    .card img {
-      width: 100%;
-      height: auto;
-      border-radius: 10px;
-    }
-
-    @media (max-width: 600px) {
-      .card {
-        width: 100%;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="/styles.css">
 </head>
+
 <body>
   <header>
-    <h1>HC Altai Dragons</h1>
+    <div class="header-content">
+      <img src="assets/images/phl/logos/altai_dragons.png" alt="Логотип команды" class="logo">
+      <h1>Altai Dragons</h1>
+    </div>
   </header>
 
   <section class="matches">
@@ -128,4 +69,5 @@
     </div>
   </section>
 </body>
+
 </html>
