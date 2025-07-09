@@ -1,13 +1,13 @@
 /* Общие стили */
 @font-face {
   font-family: "Minecraft";
-  src: url("/assets/fonts/minecraft.ttf") format("truetype");
+  src: url("assets/fonts/minecraft.ttf") format("truetype");
 }
 
 body {
   margin: 0;
   font-family: "Minecraft";
-  background-image: "/assets/images/ice.png";
+  background-image: "assets/images/ice.jpg";
   color: #ebf0f2;
 }
 
@@ -22,6 +22,14 @@ header {
 .teams-grid {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
+  gap: 1rem;
+  padding: 2rem;
+  justify-items: center;
+}
+
+.teams-grid-jhl {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
   gap: 1rem;
   padding: 2rem;
   justify-items: center;
@@ -56,9 +64,12 @@ header {
 }
 
 @media (max-width: 1000px) {
-  .teams-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+    .teams-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .teams-grid-jhl {
+      grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 /* Стили для страниц команд */
@@ -152,4 +163,14 @@ left: 10%;
 
 .team-card:hover .team_title {
   transform: scale(1.05); /* Пример анимации для лого */
+}
+
+.opis {
+  margin: 40px;
+  color:#3a5d5f;
+}
+
+::selection {
+  background-color: #4d7679;
+  color: #3a5d5f;
 }
